@@ -1,0 +1,29 @@
+Esta realizado con Spring Boot
+Basicamente es el ejercicio 11 pero eliminadas cosas para trabajar con Boot
+
+--Retocado el POM por una serie de problemas que existian
+--La configuracion en fichero Application.properties
+--Cambiado el saveorupdate por dos métodos
+--Lo he pasado a JPA. Mirar el DAO
+
+	@PersistenceContext	
+	private EntityManager entityManager;	
+	
+Es automático a través de la configuracion
+
+
+Mejoras
+=======
+
+quitar todos los getParameter (viejuno) para usar @requestParam	
+	
+	
+
+Para ejecutarlo, ejecutar (modo consola) el Spring11MvcHibernateBootApplication
+Se despliega el Tomcat interno y permanece en modo Listener.
+
+En el navegador ejecutar 
+http://localhost:8080/
+
+
+Spring Boot 1.5.x trabaja con Hibernate 5.0.x
